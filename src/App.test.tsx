@@ -4,7 +4,7 @@ import { describe, it, expect } from 'vitest'
 import App from './App'
 
 describe('App', () => {
-  it('renders the Get started heading', () => {
+  it('renders the Get started', () => {
     render(<App />)
     expect(screen.getByText('Get started')).toBeInTheDocument()
   })
