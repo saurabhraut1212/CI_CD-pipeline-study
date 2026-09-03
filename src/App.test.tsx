@@ -13,6 +13,6 @@ describe('App', () => {
     render(<App />)
     const button = screen.getByRole('button', { name: /Count is 0/i })
     await userEvent.click(button)
-    expect(screen.getByRole('button', { name: /Count is 2/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Count is 1/i })).toBeInTheDocument()
   })
 })
