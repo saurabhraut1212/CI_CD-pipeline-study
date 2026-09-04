@@ -6,7 +6,7 @@ import App from './App'
 describe('App', () => {
   it('renders the Get started', () => {
     render(<App />)
-    expect(screen.getByText('Get started')).toBeInTheDocument()
+    expect(screen.getByText('Get started here')).toBeInTheDocument()
   })
 
   it('increments the counter when the button is clicked', async () => {
