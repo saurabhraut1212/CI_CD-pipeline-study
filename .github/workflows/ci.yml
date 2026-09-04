@@ -32,7 +32,7 @@ jobs:
       - name: Run tests
         run: npm run test
 
-    build-and-push:
+  build-and-push:
     needs: build-and-lint
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
